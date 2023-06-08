@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NTElissa/online-family-monitoring-expanse-system.git"
+    "url": "git+https://github.com/NTElissa/family-monitoring-be.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NTElissa/online-family-monitoring-expanse-system/issues"
+    "url": "https://github.com/NTElissa/family-monitoring-be/issues"
   },
-  "homepage": "https://github.com/NTElissa/online-family-monitoring-expanse-system#readme",
+  "homepage": "https://github.com/NTElissa/family-monitoring-be#readme",
   "devDependencies": {
     "@babel/cli": "^7.21.5",
     "@babel/core": "^7.21.8",
