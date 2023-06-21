@@ -1,21 +1,27 @@
-// Imports
-
+import db from "./database/models";
 import express from 'express';
 import dotenv from 'dotenv';
 
+dotenv.config();
 
 
+const { sequelize } = db;
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch((err) => {
+    console.error('Unable to connect to the database:', err);
+  });
 
-// Sequelize configuration
-// dotenv.config();
-
-// App setup
-dotenv.config()
 const app = express();
 
-// Routes
+app.get("/", (req, res) => {
+  res.status(200).send(`
+<h1 style="text-align: center; margin-top: 20vh;"> my-brand  APIS</h1>
+`);
+});
 
 
-// Export the app
 export default app;
-
